@@ -1,0 +1,24 @@
+1-Requires internet all about JQuery on Javascript file line 111-114--Done
+2-Label and input  on login,register,comment. --Done
+3-Label and input attributes on login,register,comment. --Done
+4-Using Javascript functions using on javascript file line 92-95, line 101-104. --Done
+5-Use of javascript to get feedback from html all javascript provides feedback. --Done
+6-Styling text elements using CSS. --Done
+7-Using css to individualy select and edit elements. --Done
+8-Creating a HTML5 document. --Done
+9-XMLHTTPREQUEST request and get and send datas require's internet. --Done
+10-Ajax a method in JQuery but JQuery requires internet. --Done
+11-Maintaning readability and simplicity of code and the use of function in javascript. --Done
+12-Get user using JSON. --Done
+13-Create a object that can be used anytime. --Done
+14-Locale storage --done
+15-the use of var and const in js. --Done
+
+16-var greet use in console for successfully logging in --Done
+
+17-If else. --Done
+18-Handling events like the statement in function. --Done
+
+19-Try catch. --Done
+
+20-Sleep function baby YEAAAAA. --Done

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <title>E</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./Register.html" class="registerElement">Register</a></li>
+                    <li class="fixed"><a href="#" onclick="replacePageContent()" style="font-size: 30px;">Home</a></li>
+                    <li><a href="./Login.html" class="loginElement">Log in</a></li>
+                    <li><a href="#About">About</a></li>
+                </ul>
+            </ul>
+
+            <div class="profileContainer">
+                <div class="Profile"> 
+                    <span class="user"></span>
+                    <img src="./cursor.png" alt="Profile Pic" class="profilePic">
+                </div>
+                <div class="dropdownContainer">
+                    <ul class="dropdown">   
+                        <li class="dropdownEl1" id="upload"><a href="#" >Upload</a></li>
+                        <li class="dropdownEl" onclick="logout()" class="logout" id="signOut"><a href="#" >Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="UploadContainer">
+            <div style="width: fit-content;" class="closeUpload" onclick="closeUploadContainer()" >
+                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;">
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-size="24" fill="white">X</text>
+                </svg>                
+            </div>
+
+            <div style="display: flex; justify-content: center; height: 100%; width: 100%;">
+
+
+                <div class="uploadCard">
+
+                    <div style="padding: 20px; font-size: 20px; font-weight: bold;">
+                        <span >Upload new video</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <span style="margin-top: 50px;">Title</span>
+                        <input type="text" id="VideoTitle" style="margin-bottom: 20px;" required>
+
+                        <span style="margin-top: 50px;">Discription</span>
+                        <textarea id="VideoDiscription" name="multiLineField" rows="7" cols="50"></textarea>
+
+                        <span style="margin-top: 50px;">Video</span>
+                        <input type="file" id="Video" style="margin-bottom: 50px;">
+                    </div>
+                    <span class="submitVideoUpload" onclick="uploadNewVideo()">Upload</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="VidOverlay">
+                <div style="display: flex; height: 100%; width: 100%; cursor: url('./cursor.png'), pointer; z-index: -1;"></div>
+                <video src="" autoplay controls class="VideoPlay"></video>
+            </div>        
+
+            <div class="CommentSection">
+                <div class="C1">
+
+                    <div class="C1header">
+                        <div class="disc">
+                            <div class="C1headerDisc" style="display: grid;">
+                                <span>Discription</span>
+                                <div>
+                                    <p id="discriptionLower"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="C1likes">
+                        <hr>
+                        <div class="C1likesButtons">
+                            <div class="like">Like</div>
+                            <div class="share">Share</div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="CommentSectionLower">
+                        <div class="C1comments">
+                            <div>
+                              <div class="comment">
+                                    <div class="userComment" style="display: flex; align-items: center; padding-bottom: 10px;">
+                                        <img src="cursor.png" alt="">
+                                        <label>Max ur dad</label>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <label>Lol look at that dumb.</label>
+                                    </div>
+                                </div> 
+                                <div class="comment">
+                                    <div class="userComment" style="display: flex; align-items: center; padding-bottom: 10px;">
+                                        <img src="cursor.png" alt="">
+                                        <label>Sheji ur dad</label>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <label>U suck.</label>
+                                    </div>
+                                </div> 
+                                
+                                <div class="comment">
+                                    <div class="userComment" style="display: flex; align-items: center; padding-bottom: 10px;">
+                                        <img src="cursor.png" alt="">
+                                        <label>dadi</label>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <label>Oh nooooooo</label>
+                                    </div>
+                                </div> 
+                                <div class="comment">
+                                    <div class="userComment" style="display: flex; align-items: center; padding-bottom: 10px;">
+                                        <img src="cursor.png" alt="">
+                                        <label>Max ur dad</label>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <label>Lol look at that dumb.</label>
+                                    </div>
+                                </div> 
+                                <div class="comment">
+                                    <div class="userComment" style="display: flex; align-items: center; padding-bottom: 10px;">
+                                        <img src="cursor.png" alt="">
+                                        <label>Oy oY</label>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <label>EHHHHHH.</label>
+                                    </div>
+                                </div> 
+                                <div class="comment">
+                                    <div class="userComment" style="display: flex; align-items: center; padding-bottom: 10px;">
+                                        <img src="cursor.png" alt="">
+                                        <label>EVER KING</label>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <label>DUMB HAHAHAHA.</label>
+                                    </div>
+                                </div> 
+                                <div class="comment">
+                                    <div class="userComment" style="display: flex; align-items: center; padding-bottom: 10px;">
+                                        <img src="cursor.png" alt="">
+                                        <label>LIKE A BIRD</label>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <label>NANI HAHAHAHAA.</label>
+                                    </div>
+                                </div> 
+                                <div class="comment">
+                                    <div class="userComment" style="display: flex; align-items: center; padding-bottom: 10px;">
+                                        <img src="cursor.png" alt="">
+                                        <label>JINX</label>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <label>OHHHH NICEE HAHAHA.</label>
+                                    </div>
+                                </div> 
+                                <div class="comment">
+                                    <div class="userComment" style="display: flex; align-items: center; padding-bottom: 10px;">
+                                        <img src="cursor.png" alt="">
+                                        <label>HAHA</label>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <label>SHEEEEEEESHH</label>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="C1footer">
+                            <input type="text" name="comment" id="comment" style="border-radius: 10px; height: 25px; width: 500px;">
+                            <div style="display: flex; justify-content: center; align-items: center; border-radius: 10px; padding: 10px; transition: background-color 0.3 ease-in;" class="sendComment">Comment</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="Container">
+            <span style="margin-left: 20px; font-size: 20px; font-weight: bold;">New Videos</span>
+
+            <div id="newVideos"></div>
+
+            </div>
+
+            <hr>
+
+            <span style="margin-left: 20px; font-size: 20px; font-weight: bold;">Popular now</span>
+
+            <div class="popular">
+                <div class="VidContainer">
+                    <video src="./videos/37751a712539e0d3940d49c5f6434a86.mp4"></video>
+                    <span>Phone</span>
+                </div>
+                <div class="VidContainer">
+                    <video src="./videos/american.mp4"></video>
+                    <span>What the hell is a kilometer!</span>
+                </div>
+                <div class="VidContainer">
+                    <video src="./videos/Another life huh.mp4"></video>
+                    <span>...</span>
+                </div>
+
+                <div class="VidContainer">
+                    <video src="./videos/awZ2v3r_460svvp9.mp4"></video>
+                    <span>BAIT!</span>
+                </div>
+                <div class="VidContainer">
+                    <video src="./videos/Bazoo.mp4"></video>
+                    <span>BOOM BOOM</span>
+                </div>
+
+                <div class="VidContainer">
+                    <video src="./videos/Bocchi gif.mp4"></video>
+                    <span>Bocchi</span>
+                </div>
+
+                <div class="VidContainer">
+                    <video src="./videos/bules.mp4"></video>
+                    <span>Blud is back</span>
+                </div>
+
+                <div class="VidContainer">
+                    <video src="./videos/Cant reach.mov"></video>
+                    <span>Cant reach help</span>
+                </div>
+
+                <div class="VidContainer">
+                    <video src="./videos/cat_ate_uraniume.mp4"></video>
+                    <span>Nucler cat</span>
+                </div>
+                <div class="VidContainer">
+                    <video src="./videos/Damn girl.mp4"></video>
+                    <span>Dang</span>
+                </div>
+
+                <div class="VidContainer">
+                    <video src="./videos/damn.mp4"></video>
+                    <span>Woah</span>
+                </div>
+                <div class="VidContainer">
+                    <video src="./videos/Dance on balls 23.mp4"></video>
+                    <span>Ahh yes</span>
+                </div>
+
+
+
+
+
+
+            <!--Add more videos here-->
+
+            <!--The overlay when vid is clicked-->
+        </div>
+
+        <div style="position: relative; bottom: 0%; width: 100%;">
+            <div id="About" class="About">
+                <boldString>Welcome to test</boldString>
+                <formattedString style="margin-left: 60px; margin-left: 60px;">This website lets you connect with other people with the same interest as you do.Connect and Scroll through videos found in the internet. You have a original? Create and upload it!</formattedString><br><br>
+            
+                <formattedString style="margin-left: 60px; margin-left: 60px;">This site is created by Amigable,John Maxim,T. find more about me through my social media accounts!</formattedString><br><br>
+            
+            </div>
+    
+            <div id="contact" class="contact">
+                <p style="margin-top: 0%; padding-top: 10px; padding-left: 50px; color: #fff; font-size: 25px; font-weight: bold;">Contact</p>
+                <div class="upHover" style="display: flex; padding-left: 20px;">
+                    <div class="card-Container" style="display: grid;">
+                        <span style="padding-bottom: 20px;">Facebook Page: <a href="https://www.facebook.com/profile.php?id=100086051635337">https://www.facebook.com/profile.php?id=100086051635337</a></span>
+                        <span style="padding-bottom: 20px; height: 5px;">Github: <a href="https://github.com/NotUrKyun">https://github.com/NotUrKyun</a></span>
+                        <!--You can add as much of your contacts here
+                        
+                            Just copy and paste span the the ones shown above with  "height: 5px;"
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="Footer-wrapper">
+                    <span style="color: rgb(150, 150, 150); font-size: 11px;">Made by ur boi max</span>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</html>
